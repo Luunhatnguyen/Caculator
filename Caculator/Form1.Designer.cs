@@ -31,9 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtKetQua = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -45,7 +46,6 @@
             this.label1.Size = new System.Drawing.Size(53, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "So a";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -67,38 +67,50 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Ket Qua";
             // 
-            // textBox1
+            // txtA
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(247, 103);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 27);
-            this.textBox1.TabIndex = 3;
+            this.txtA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtA.Location = new System.Drawing.Point(247, 103);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(205, 27);
+            this.txtA.TabIndex = 3;
             // 
-            // textBox2
+            // txtB
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(247, 192);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 27);
-            this.textBox2.TabIndex = 4;
+            this.txtB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtB.Location = new System.Drawing.Point(247, 192);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(205, 27);
+            this.txtB.TabIndex = 4;
             // 
-            // textBox3
+            // txtKetQua
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(247, 304);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(205, 27);
-            this.textBox3.TabIndex = 5;
+            this.txtKetQua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKetQua.Location = new System.Drawing.Point(247, 304);
+            this.txtKetQua.Name = "txtKetQua";
+            this.txtKetQua.Size = new System.Drawing.Size(205, 27);
+            this.txtKetQua.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(212, 378);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 66);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Cong";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1070, 591);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtKetQua);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -114,9 +126,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.TextBox txtKetQua;
+        private System.Windows.Forms.Button button1;
     }
 }
 
